@@ -40,9 +40,17 @@ body h1 #Title {
 
 body #btnStart {
   text-align: center;
-  margin: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  width: 10rem;
   border: 1px solid white;
   color: white;
+}
+
+body #btnStart:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#010d08), color-stop(0%, #000806), color-stop(50%, #ec2b18), to(#010f06));
+  background: linear-gradient(90deg, #010d08 0%, #000806 0%, #ec2b18 50%, #010f06 100%);
 }
 
 body #Welcome {

@@ -17,9 +17,15 @@ body{
     }
     #btnStart{
         text-align: center;
-        margin: 3rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem;
+        width: 10rem;
         border: 1px solid white;
         color: white;
+        &:hover{
+            background: linear-gradient(90deg, rgba(1,13,8,1) 0%, rgba(0,8,6,1) 0%, rgba(236,43,24,1) 50%, rgba(1,15,6,1) 100%);
+        }
     }
     #Welcome{
         text-align: center;
