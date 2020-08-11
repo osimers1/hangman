@@ -30,6 +30,7 @@ btnStart.addEventListener("click",()=>{
     SetupGame();
     StarGame();
     document.getElementById("Game").style.display = "flex"
+    Resultat.removeChild(Resultat.firstChild);
     // ChooseDifficulty.hidden = false;
     // Difficulty.hidden = false;
 });
@@ -57,7 +58,7 @@ function SetupGame(){
         div.className = "Letter";
         div.innerHTML = "_";
         div.setAttribute("id", "Letter" + i);
-        Game.appendChild(div);       
+        Game.appendChild(div);          
     }
 }
 
@@ -93,20 +94,22 @@ function CheckInWord(key){
     else
         return 0;
 }
-function CheckWin(){
-    if (find == random.length){
-        ShowResult(1);
-    }
-    else if (lives <= 0){
-        ShowResult(0);
-    }
-}
+
 function ShowLetter(key){
     for (let i = 0; i < random.length; i++){
         if (random[i] == key){
             find++;
             document.querySelector("#Letter" + i).innerHTML = key;
         }
+    }
+}
+
+function CheckWin(){
+    if (find == random.length){
+        ShowResult(1);
+    }
+    else if (lives <= 0){
+        ShowResult(0);
     }
 }
 
@@ -117,7 +120,9 @@ function ShowResult(win){
         Win.className = "Win";
         Win.innerHTML = "You win the game the word was " + random;
         Resultat.appendChild(Win);
-        Reset()
+        Reset();
+        btnStart.hidden = false;
+        Welcome.hidden = true;
     }
     else{
         console.log("looser!");
@@ -125,8 +130,9 @@ function ShowResult(win){
         Loose.className = "Loose";
         Loose.innerHTML = "You loose the game the word was " + random;
         Resultat.appendChild(Loose);
-        
         Reset();
+        btnStart = false;
+        Welcome.hidden = true;
     }
 }
 function Reset(){
