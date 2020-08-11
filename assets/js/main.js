@@ -2,7 +2,7 @@ let btnStart = document.getElementById("btnStart");
 
 let Welcome = document.getElementById("Welcome");
 Welcome.hidden = true;
-const Word = ["Parler", "Dire", "Accomplir", "Programmer", "Saluer", "Calmer"];
+const Word = ["Parler", "Dire", "Accomplir", "Programmer", "Saluer", "Calmer", "hello", "world", "programing"];
 let random = "";
 let Game = document.getElementById("Game");
 let lives = 0;
