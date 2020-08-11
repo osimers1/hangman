@@ -1,0 +1,59 @@
+body{
+    background-color: black;
+    h1{
+        
+        text-align: center;
+        background: rgb(1,13,8);
+        background: linear-gradient(90deg, rgba(1,13,8,1) 0%, rgba(0,8,6,1) 0%, rgba(236,43,24,1) 50%, rgba(1,15,6,1) 100%);
+
+        #Title{
+            animation: Title 1s infinite;
+        @keyframes Title { 
+            0% { opacity:0.25; }
+            50% { opacity:1; } 
+            100% { opacity:0.25; }
+        }
+        }
+    }
+    #btnStart{
+        text-align: center;
+        margin: 3rem;
+        border: 1px solid white;
+        color: white;
+    }
+    #Welcome{
+        text-align: center;
+        color: white;
+    }
+    #ChooseDifficulty{
+        text-align: center;
+    }
+    #Difficulty{
+        justify-content: space-evenly;
+        text-align: center;
+        #EasyDifficulty{
+            background-color: green;
+        }
+        #NormalDifficulty{
+            background-color: grey;
+        }
+        #InsaneDifficulty{
+            background-color: red;
+        }
+    }
+    .Letter{
+        padding-left: 0.5rem;
+        color: white;
+    }
+    .Win{
+        text-align: center;
+        color: white;
+    }
+    .Loose{
+        text-align: center;
+        color: white;
+    }
+    #Game{
+        justify-content: center;
+    }
+}

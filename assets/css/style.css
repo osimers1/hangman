@@ -1,0 +1,95 @@
+body {
+  background-color: black;
+}
+
+body h1 {
+  text-align: center;
+  background: #010d08;
+  background: -webkit-gradient(linear, left top, right top, from(#010d08), color-stop(0%, #000806), color-stop(50%, #ec2b18), to(#010f06));
+  background: linear-gradient(90deg, #010d08 0%, #000806 0%, #ec2b18 50%, #010f06 100%);
+}
+
+body h1 #Title {
+  -webkit-animation: Title 1s infinite;
+          animation: Title 1s infinite;
+}
+
+@-webkit-keyframes Title {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes Title {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+
+body #btnStart {
+  text-align: center;
+  margin: 3rem;
+  border: 1px solid white;
+  color: white;
+}
+
+body #Welcome {
+  text-align: center;
+  color: white;
+}
+
+body #ChooseDifficulty {
+  text-align: center;
+}
+
+body #Difficulty {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+body #Difficulty #EasyDifficulty {
+  background-color: green;
+}
+
+body #Difficulty #NormalDifficulty {
+  background-color: grey;
+}
+
+body #Difficulty #InsaneDifficulty {
+  background-color: red;
+}
+
+body .Letter {
+  padding-left: 0.5rem;
+  color: white;
+}
+
+body .Win {
+  text-align: center;
+  color: white;
+}
+
+body .Loose {
+  text-align: center;
+  color: white;
+}
+
+body #Game {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
