@@ -131,7 +131,7 @@ function ShowResult(win){
         Loose.innerHTML = "You loose the game the word was " + random;
         Resultat.appendChild(Loose);
         Reset();
-        btnStart = false;
+        btnStart.hidden = false;
         Welcome.hidden = true;
     }
 }
